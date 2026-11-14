@@ -1,0 +1,24 @@
+{
+  "name": "busybar-hop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Hop, an endless runner for the BUSY Bar",
+  "author": "maxugc",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "busy-cli build",
+    "app:install": "busy-cli app install",
+    "app:run": "busy-cli app run",
+    "app:stop": "busy-cli app stop",
+    "app:uninstall": "busy-cli app uninstall",
+    "sprites": "python3 tools/make_sprites.py",
+    "sim": "node tools/sim.cjs 15 30 180"
+  },
+  "engines": {
+    "node": ">=24 <26"
+  },
+  "devDependencies": {
+    "@busy-app/cli": "0.6.0"
+  }
+}
